@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onended</title>
+</head>
+<body>
+     <p>Please watch this video till the end</p>
+    <video autoplay muted controls onended="myFunction()">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+
+<p id="text"></p>
+
+    <script>
+        function myFunction(){
+            document.getElementById('text').innerHTML = 'Thanks for watching till the end...This is onend attribute. So something will happen after video end';
+
+
+        }
+    </script>
+    
+</body>
+</html>
